@@ -1,7 +1,7 @@
 <?php
 //Подключаем сессию для оповещения о пользовательских ошибках ввода
 session_start();
-//Подключение к БД через PDO
+//Подключение к БД
 require '../db/connect.php';
 
 /*
@@ -9,8 +9,8 @@ require '../db/connect.php';
 
 CREATE TABLE IF NOT EXISTS `comments` (
 `id` int(11) NOT NULL AUTO_INCREMENT,
-`author` int(11) NULL,
-`content` int(11) NOT NULL,
+`author` VARCHAR(255) NULL,
+`content` TEXT NOT NULL,
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8
 COLLATE=utf8_unicode_ci;

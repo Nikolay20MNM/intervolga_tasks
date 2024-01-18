@@ -1,5 +1,5 @@
 <?php
-
+// Подключение к БД через PDO
 $servername = 'localhost';
 $username = 'root';
 $password = '';
